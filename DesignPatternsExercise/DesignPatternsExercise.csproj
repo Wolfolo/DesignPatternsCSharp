@@ -45,7 +45,9 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
@@ -57,6 +59,10 @@
     <Compile Include="CreationalPatterns\AbstractFactory\Mocks\BookFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\Mocks\Car.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\Mocks\CarFactory.cs" />
+    <Compile Include="CreationalPatterns\Builder\Builder.cs" />
+    <Compile Include="CreationalPatterns\Builder\BuilderTest.cs" />
+    <Compile Include="CreationalPatterns\Builder\ConcreteBuilder.cs" />
+    <Compile Include="CreationalPatterns\Builder\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
