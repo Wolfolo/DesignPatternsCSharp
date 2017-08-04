@@ -50,7 +50,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\AbstractFactoryTest.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\IAbstractFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\IProduct.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Mocks\Book.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Mocks\BookFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Mocks\Car.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactory\Mocks\CarFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
