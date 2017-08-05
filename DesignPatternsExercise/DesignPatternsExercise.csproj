@@ -63,6 +63,14 @@
     <Compile Include="CreationalPatterns\Builder\BuilderTest.cs" />
     <Compile Include="CreationalPatterns\Builder\ConcreteBuilder.cs" />
     <Compile Include="CreationalPatterns\Builder\Product.cs" />
+    <Compile Include="CreationalPatterns\FactoryMethod\FactoryMethodTest.cs" />
+    <Compile Include="CreationalPatterns\FactoryMethod\IFactoryMethod.cs" />
+    <Compile Include="CreationalPatterns\FactoryMethod\IProduct.cs" />
+    <Compile Include="CreationalPatterns\FactoryMethod\Mocks\BarProduct.cs" />
+    <Compile Include="CreationalPatterns\FactoryMethod\Mocks\BazProduct.cs" />
+    <Compile Include="CreationalPatterns\FactoryMethod\Mocks\CompleteFactory.cs" />
+    <Compile Include="CreationalPatterns\FactoryMethod\Mocks\IncompleteFactory.cs" />
+    <Compile Include="CreationalPatterns\FactoryMethod\Mocks\FooProduct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
