@@ -1,40 +1,56 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using DesignPatternsExercise.CreationalPatterns.FactoryMethod.Mocks;
+using System.Collections.Generic;
 
 namespace DesignPatternsExercise.CreationalPatterns.FactoryMethod
 {
     [TestClass]
     public class FactoryMethodTest
     {
+        private Dictionary<ProductType, Type> ProductionProvider()
+        {
+            var products = new Dictionary<ProductType, Type>();
+
+            products.Add(ProductType.Foo, typeof(FooProduct));
+            products.Add(ProductType.Bar, typeof(BarProduct));
+            products.Add(ProductType.Baz, typeof(BazProduct));
+
+            return products;
+        }
+
         [TestMethod]
-        public void TestProduction()
+        public void TestFactoryProducesProducts()
+        {
+            var factory = new CompleteFactory();
+
+            foreach (var product in ProductionProvider())
+            {
+                Assert.IsInstanceOfType(factory.Build(product.Key), typeof(IProduct));
+                Assert.IsInstanceOfType(factory.Build(product.Key), product.Value);
+            }
+        }
+
+        [TestMethod]
+        public void TestIncompleteFactoryThrowsException()
         {
             IFactoryMethod factory = new IncompleteFactory();
 
-            Assert.IsInstanceOfType(factory.Build(ProductType.Foo), typeof(IProduct));
-            Assert.IsInstanceOfType(factory.Build(ProductType.Bar), typeof(IProduct));
-            Assert.IsInstanceOfType(factory.Build(ProductType.Foo), typeof(FooProduct));
-            Assert.IsInstanceOfType(factory.Build(ProductType.Bar), typeof(BarProduct));
-
             try
             {
-                factory.Build(ProductType.Baz);
+                foreach (var product in ProductionProvider())
+                {
+                    Assert.IsInstanceOfType(factory.Build(product.Key), typeof(IProduct));
+                    Assert.IsInstanceOfType(factory.Build(product.Key), product.Value);
+                }
+
+                // Must not get here
+                Assert.Fail();
             }
             catch(Exception ex)
             {
                 Assert.IsInstanceOfType(ex, typeof(NotImplementedException));
             }
-
-            // Try again with a complete factory
-            factory = new CompleteFactory();
-
-            Assert.IsInstanceOfType(factory.Build(ProductType.Foo), typeof(IProduct));
-            Assert.IsInstanceOfType(factory.Build(ProductType.Bar), typeof(IProduct));
-            Assert.IsInstanceOfType(factory.Build(ProductType.Baz), typeof(IProduct));
-            Assert.IsInstanceOfType(factory.Build(ProductType.Foo), typeof(FooProduct));
-            Assert.IsInstanceOfType(factory.Build(ProductType.Bar), typeof(BarProduct));
-            Assert.IsInstanceOfType(factory.Build(ProductType.Baz), typeof(BazProduct));
         }
     }
 }
