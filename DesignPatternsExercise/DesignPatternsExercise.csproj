@@ -71,6 +71,10 @@
     <Compile Include="CreationalPatterns\FactoryMethod\Mocks\CompleteFactory.cs" />
     <Compile Include="CreationalPatterns\FactoryMethod\Mocks\IncompleteFactory.cs" />
     <Compile Include="CreationalPatterns\FactoryMethod\Mocks\FooProduct.cs" />
+    <Compile Include="CreationalPatterns\Multiton\Class1.cs" />
+    <Compile Include="CreationalPatterns\Multiton\Class2.cs" />
+    <Compile Include="CreationalPatterns\Multiton\Multiton.cs" />
+    <Compile Include="CreationalPatterns\Multiton\MultitonTest.cs" />
     <Compile Include="CreationalPatterns\Singleton\Singleton.cs" />
     <Compile Include="CreationalPatterns\Singleton\SingletonTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
