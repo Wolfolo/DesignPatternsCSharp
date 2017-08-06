@@ -71,6 +71,8 @@
     <Compile Include="CreationalPatterns\FactoryMethod\Mocks\CompleteFactory.cs" />
     <Compile Include="CreationalPatterns\FactoryMethod\Mocks\IncompleteFactory.cs" />
     <Compile Include="CreationalPatterns\FactoryMethod\Mocks\FooProduct.cs" />
+    <Compile Include="CreationalPatterns\Singleton\Singleton.cs" />
+    <Compile Include="CreationalPatterns\Singleton\SingletonTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
