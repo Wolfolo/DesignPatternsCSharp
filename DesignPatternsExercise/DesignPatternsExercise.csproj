@@ -75,6 +75,8 @@
     <Compile Include="CreationalPatterns\Multiton\Class2.cs" />
     <Compile Include="CreationalPatterns\Multiton\Multiton.cs" />
     <Compile Include="CreationalPatterns\Multiton\MultitonTest.cs" />
+    <Compile Include="CreationalPatterns\Prototype\Prototype.cs" />
+    <Compile Include="CreationalPatterns\Prototype\PrototypeTest.cs" />
     <Compile Include="CreationalPatterns\Singleton\Singleton.cs" />
     <Compile Include="CreationalPatterns\Singleton\SingletonTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
