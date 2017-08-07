@@ -75,6 +75,9 @@
     <Compile Include="CreationalPatterns\Multiton\Class2.cs" />
     <Compile Include="CreationalPatterns\Multiton\Multiton.cs" />
     <Compile Include="CreationalPatterns\Multiton\MultitonTest.cs" />
+    <Compile Include="CreationalPatterns\ObjectPool\ObjectPool.cs" />
+    <Compile Include="CreationalPatterns\ObjectPool\ObjectPoolTest.cs" />
+    <Compile Include="CreationalPatterns\ObjectPool\PooledObject.cs" />
     <Compile Include="CreationalPatterns\Prototype\Prototype.cs" />
     <Compile Include="CreationalPatterns\Prototype\PrototypeTest.cs" />
     <Compile Include="CreationalPatterns\Singleton\Singleton.cs" />
