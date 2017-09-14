@@ -93,6 +93,10 @@
     <Compile Include="CreationalPatterns\Singleton\Singleton.cs" />
     <Compile Include="CreationalPatterns\Singleton\SingletonTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StructuralPatterns\Adapter\AdapterTest.cs" />
+    <Compile Include="StructuralPatterns\Adapter\OneWayScrewAdapter.cs" />
+    <Compile Include="StructuralPatterns\Adapter\ScrewInterface.cs" />
+    <Compile Include="StructuralPatterns\Adapter\ThirdParty\OneWayScrew.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
