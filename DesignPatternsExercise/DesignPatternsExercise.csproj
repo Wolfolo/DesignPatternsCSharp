@@ -97,6 +97,12 @@
     <Compile Include="StructuralPatterns\Adapter\OneWayScrewAdapter.cs" />
     <Compile Include="StructuralPatterns\Adapter\ScrewInterface.cs" />
     <Compile Include="StructuralPatterns\Adapter\ThirdParty\OneWayScrew.cs" />
+    <Compile Include="StructuralPatterns\Bridge\BridgeInterface.cs" />
+    <Compile Include="StructuralPatterns\Bridge\Mocks\AbstractShape.cs" />
+    <Compile Include="StructuralPatterns\Bridge\ShapeInterface.cs" />
+    <Compile Include="StructuralPatterns\Bridge\BridgeTest.cs" />
+    <Compile Include="StructuralPatterns\Bridge\Mocks\Square.cs" />
+    <Compile Include="StructuralPatterns\Bridge\Mocks\Circle.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
