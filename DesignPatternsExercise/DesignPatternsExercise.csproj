@@ -103,6 +103,13 @@
     <Compile Include="StructuralPatterns\Bridge\BridgeTest.cs" />
     <Compile Include="StructuralPatterns\Bridge\Mocks\Square.cs" />
     <Compile Include="StructuralPatterns\Bridge\Mocks\Circle.cs" />
+    <Compile Include="StructuralPatterns\Composite\Mocks\BranchNode.cs" />
+    <Compile Include="StructuralPatterns\Composite\Mocks\LeafNode.cs" />
+    <Compile Include="StructuralPatterns\Composite\Mocks\AbstractNode.cs" />
+    <Compile Include="StructuralPatterns\Composite\Mocks\RootNode.cs" />
+    <Compile Include="StructuralPatterns\Composite\Mocks\TrunkNode.cs" />
+    <Compile Include="StructuralPatterns\Composite\NodeInterface.cs" />
+    <Compile Include="StructuralPatterns\Composite\CompositeTest.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
